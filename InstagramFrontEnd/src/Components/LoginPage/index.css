@@ -1,0 +1,120 @@
+/* Responsive Instagram-style Login (Mobile Only) */
+
+body {
+  margin: 0;
+  background-color: #2E2C2F;
+  color: #E0F2E9;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.lang-text {
+  font-size: 13px;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.insta-logo {
+  width: 100px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  margin-top: 100px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #3b3b3b;
+  border-radius: 14px;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+  outline: none;
+}
+.input-field:focus {
+  background-color: transparent !important;
+  border-color: #0095f6;
+  color: #E0F2E9;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  padding: 20px;
+  color: #0389e3;
+  cursor: pointer;
+  user-select: none;
+}
+
+.login-btn {
+  background-color: #0389e3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 14px;
+  font-weight: 600;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.forgot-text {
+  color: white;
+  font-size: 13px;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-btn {
+  background-color: transparent;
+  border: 1px solid #0095f6;
+  color: #0095f6;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.meta-logo {
+  width: 60px;
+  opacity: 0.7;
+}
+
+/* Mobile-only design */
+@media (min-width: 600px) {
+  .main-container {
+    display: none;
+  }
+}
