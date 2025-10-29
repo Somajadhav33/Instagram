@@ -17,7 +17,7 @@ const Login = () => {
     try {
       // POST request to backend
 
-      const response = await axios.post("http://localhost:5000/", {
+      const response = await axios.post("https://instagram-8e64.onrender.com/", {
         username,
         password,
       });
